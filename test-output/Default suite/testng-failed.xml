@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.flipkart.Tvpurchase">
+      <class name="com.flipkart.browserlaunch">
         <methods>
-          <include name="browserlaunch"/>
-          <include name="endTime"/>
           <include name="login"/>
-          <include name="browserquit"/>
+          <include name="endTime"/>
           <include name="starttime"/>
+          <include name="browserLaunch"/>
+          <include name="search" invocation-numbers="0"/>
+          <include name="browserquit"/>
         </methods>
-      </class> <!-- com.flipkart.Tvpurchase -->
+      </class> <!-- com.flipkart.browserlaunch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
